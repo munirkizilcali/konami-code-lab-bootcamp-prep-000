@@ -4,6 +4,7 @@ function init() {
   // Write your JavaScript code inside the init() function
 var body = document.body
 body.addEventListener(`keydown`, function(e) {
+  console.log(`e.which: ${e.which} - e.detail: ${e.detail} - e.location: ${e.location}`)
   if(parseInt(e.which) !== 0) {
     keyarray.push(parseInt(e.which))
   } else {
