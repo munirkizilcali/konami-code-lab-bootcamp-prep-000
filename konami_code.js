@@ -9,7 +9,7 @@ body.addEventListener(`keydown`, function(e) {
     keyarray.push(parseInt(e.which))
   } else if (e.detail) {
     keyarray.push(parseInt(e.detail))
-  } else (e.location) {
+  } else {
     keyarray.push(parseInt(e.location))
   }
   if (keyarray.length > 10) {
