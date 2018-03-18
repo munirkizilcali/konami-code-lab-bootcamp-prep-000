@@ -5,9 +5,11 @@ function init() {
 var body = document.body
 body.addEventListener(`keydown`, function(e) {
   console.log(`e.which: ${e.which} - e.detail: ${e.detail} - e.location: ${e.location}`)
-  if(parseInt(e.which) !== 0) {
+  if(e.which) {
     keyarray.push(parseInt(e.which))
-  } else {
+  } else if (e.detail) {
+    keyarray.push(parseInt(e.detail))
+  } else (e.location) {
     keyarray.push(parseInt(e.location))
   }
   if (keyarray.length > 10) {
