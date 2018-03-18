@@ -26,7 +26,6 @@ describe('index', () => {
       window.alert = expect.createSpy()
 
       for (let i = 0, l = code.length; i < l; i++) {
-        console.log(code[i])
         triggerKeyDown(code[i])
       }
 
