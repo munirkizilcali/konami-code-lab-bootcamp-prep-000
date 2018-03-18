@@ -4,7 +4,7 @@ function init() {
   // Write your JavaScript code inside the init() function
 var body = document.body
 body.addEventListener(`keydown`, function(e) {
-  console.log(e.which + ' detail:' + e.detail + ' ' + e.location)
+  console.log(e.which + ' detail:' + e.detail + ' location:' + e.location)
   keyarray.push(e.which)
   if (keyarray.length > 10) {
     keyarray.shift()
